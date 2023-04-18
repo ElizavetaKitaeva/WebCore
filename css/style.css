@@ -98,11 +98,13 @@ main {
     margin-top: 0;
 }
 
-.service-title__line {
-    background: #41F6D7;
-    border-radius: 0 20px 20px 0;
+.service-title::before {
+    content: "";
+    display: block;
     width: 4px;
     height: 40px;
+    background: #41F6D7;
+    border-radius: 0 20px 20px 0;
 }
 
 .checkstatus {
@@ -166,6 +168,7 @@ main {
     color: #1B1C21;
     font-weight: 500;
     font-style: normal;
+    margin: 0;
 }
 
 .header__navigation--button--text {
@@ -176,6 +179,8 @@ main {
     justify-content: start;
     cursor: pointer;
     border: none;
+    margin-top: 13px;
+    margin-left: 10px;
 }
 
 .info-block__content--button--text{
@@ -247,6 +252,11 @@ main {
 }
 
 @media (min-width: 1120px) {
+
+    header {
+        background-color: #F8F8F8;
+    }
+
     .container {
         width: 1120px;
     }
@@ -263,6 +273,10 @@ main {
         display: flex;
         align-items: start;
         justify-content: space-between;
+    }
+
+    .header {
+        align-items: center;
     }
 
     .service-title {
@@ -302,7 +316,8 @@ main {
     }
 
     .info-block__content--text-block {
-        width: 490px;
+        width: 500px;
+        height: 160px;
         overflow: hidden;
     }
     
