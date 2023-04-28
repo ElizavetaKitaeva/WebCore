@@ -110,12 +110,12 @@ main {
     margin-top: 0;
 }
 
-aside {
+.sidebar {
     position: absolute;
     height: 676px;
 }
 
-aside::before {
+.sidebar::before {
     content: "";
     display: block;
     width: 4px;
@@ -267,7 +267,7 @@ aside::before {
         margin-top: 0;
     }
 
-    aside::before {
+    .sidebar::before {
         margin-top: 7em;
     }
 
@@ -360,11 +360,11 @@ aside::before {
         display: block;
     }
 
-    aside {
+    .sidebar {
         height: 1024px;
     }
     
-    aside::before {
+    .sidebar::before {
         margin-top: 1.2em;
     }
     
