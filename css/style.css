@@ -232,7 +232,7 @@ main {
 
 @media (min-width: 768px) {
     .container {
-        width: 768px;
+        min-width: 768px;
     }
 
     .call, .chat, .profile, .first-line {
