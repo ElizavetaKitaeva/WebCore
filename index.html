@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Услуги и сервисы</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar__header">
-                <nav class="sidebar__header--header__navigation">
-                    <div class="sidebar__header--header__navigation--left-menu">
-                        <button class="header__navigation--button burger"></button>
-                        <img class="logo" src="img/Group.svg" alt="logo"> 
-                    </div>
-                    <div class="sidebar__header--header__navigation--right-menu">
-                        <button class="header__navigation--button"><img class="search" src="img/search.png" alt="search"></button>
-                    </div>
-                </nav>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar__container">
+        <div class="sidebar__header">
+          <nav class="sidebar__header__navigation">
+            <div class="sidebar__header__block left-menu">
+              <button class="sidebar__header__button burger"></button>
+              <img
+                class="sidebar__header__img logo"
+                src="img/Group.svg"
+                alt="logo"
+              />
             </div>
-            <main>
-
-            </main>
-        </aside>
+            <div class="sidebar__header__block right-menu">
+              <button class="sidebar__header__button search"></button>
+            </div>
+          </nav>
         </div>
-    </header>
+        <main class="sidebar__main">
+          <nav class="sidebar__main__navigation">
+            <ul class="sidebar__main__list">
+              <li>
+                <a class="sidebar__main__link" href="#">Ремонт техники</a>
+              </li>
+              <li>
+                <a class="sidebar__main__link" href="#">Услуги и сервисы</a>
+              </li>
+              <li>
+                <a class="sidebar__main__link" href="#"
+                  >Корпоративным клиентам</a
+                >
+              </li>
+              <li>
+                <a class="sidebar__main__link" href="#">Продавцам техники</a>
+              </li>
+              <li><a class="sidebar__main__link" href="#">Партнерам</a></li>
+              <li>
+                <a class="sidebar__main__link" href="#">Производителям</a>
+              </li>
+              <li>
+                <a class="sidebar__main__link" href="#"
+                  >Наши сервисные центры</a
+                >
+              </li>
+              <li><a class="sidebar__main__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
 
-    <!-- <main>
-        <div class="container">
-           
-            <nav class="navigation-block">
-                <ul class="navigation-block__menu">
-                    <li><a class="navigation-block__menu--link active-link" href="#">Ремонтируемые бренды</a></li>
-                    <li><a class="navigation-block__menu--link" href="#">Ремонтируемые устройства</a></li>
-                    <li><a class="navigation-block__menu--link" href="#">Цены на услуги</a></li>
-                    <li><a class="navigation-block__menu--link" href="#">Адреса сервисных центров</a></li>
-                    <li><a class="navigation-block__menu--link" href="#">Специальные цены</a></li>
-                    <li><a class="navigation-block__menu--link" href="#">Отзывы</a></li>
-                </ul>
-            </nav>
-
-        <div class="info-block">
-
-            <section class="info-block__content">
-
-                <div class="info-block__content--text-block">
-                    <p class="info-block__content--text">
-                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    <br><br>
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                    </p>
-                </div>
-
-                <button class="info-block__content--button">
-                    <img class="info-block__content--button--image" src="img/expand.svg" alt="">
-                    <p class="info-block__content--button--text">Читать далее</p>
-                </button>
-
-            </section>
-
-            <picture class="info-block__banner">
-                <img class="info-block__banner--image" src="img/banner.jpg" alt="">
-            </picture>
-
-        </div>
-    </div> 
-    </main>
-    <footer>
-    </footer> -->
-</body>
+          <div class="sidebar__main__block bottom-menu">
+            <div class="sidebar__main__bottons-block">
+              <botton class="sidebar__main__button phone"></botton>
+              <botton class="sidebar__main__button message"></botton>
+              <botton class="sidebar__main__button user"></botton>
+            </div>
+            <p class="sidebar__main__input mail">mail@cps.com</p>
+            <p class="sidebar__main__input number">8 800 890 8900</p>
+            <form class="sidebar__main__form languages">
+              <input
+                class="sidebar__main__radio"
+                id="ru"
+                type="radio"
+                name="contact"
+              />
+              <label class="sidebar__main__label" for="ru">RU</label>
+              <input
+                class="sidebar__main__radio"
+                id="en"
+                type="radio"
+                name="contact"
+              />
+              <label class="sidebar__main__label" for="en">EN</label>
+              <input
+                class="sidebar__main__radio"
+                id="ch"
+                type="radio"
+                name="contact"
+              />
+              <label class="sidebar__main__label" for="ch">CH</label>
+            </form>
+          </div>
+        </main>
+      </div>
+    </aside>
+  </body>
 </html>

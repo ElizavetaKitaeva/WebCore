@@ -1,137 +1,222 @@
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TTLakes-Bold.woff') format('woff'),
-        url('../fonts/TTLakes-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("../fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-DemiBold.eot');
-    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
-        url('../fonts/TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TTLakes-DemiBold.woff') format('woff'),
-        url('../fonts/TTLakes-DemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-DemiBold.eot");
+  src: local("TT Lakes DemiBold"), local("TTLakes-DemiBold"),
+    url("../fonts/TTLakes-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-DemiBold.woff") format("woff"),
+    url("../fonts/TTLakes-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-Medium.eot');
-    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-        url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TTLakes-Medium.woff') format('woff'),
-        url('../fonts/TTLakes-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
-    background-color: #F8F8F8;
-    font-family: 'TT Lakes';
-}
-
-header {
-    background-color: white;
+  background-color: #ffffff;
+  font-family: "TT Lakes";
 }
 
 main {
-    background-color: #F8F8F8;
+  background-color: #ffffff;
 }
 
-.container {
-    width: 320px;
-    margin: auto;
+.sidebar {
+  width: 320px;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 
-.header {
-    margin: 0 24px 0 24px;
-}
-
-.header__navigation, .header__navigation--right-menu, .header__navigation--left-menu {
-    display: flex;
-    align-items: center;
-}
-
-.navigation-block__menu--link:active, .header__navigation--button:active {
-    background-color: inherit;
-}
-
-.header__navigation {
-    justify-content: space-between;
-}
-
-.header__navigation--button {
-    margin-bottom: 24px;
-    margin-top: 24px;
-    margin-right: 18px;
-    border: none;
-    cursor: pointer;
+.sidebar__container {
+  width: 272px;
+  margin: auto;
 }
 
 .sidebar__header {
-    position: absolute;
-    width: 320px;
+  margin-top: 18.73px;
 }
 
-.header__navigation--button {
-    background-color: #FF3E79;;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: relative;
-    padding: 11px;
+.sidebar__header__navigation,
+.sidebar__header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.search {
-    width: 17.06px;
+.sidebar__header__button {
+  background-color: inherit;
+}
+
+.burger {
+  margin-right: 18px;
+}
+
+.burger:before,
+.burger::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 21.75px;
+  height: 2.17px;
+  background-color: white;
+  border-radius: 1px;
+  left: 22%;
+  top: 49%;
 }
 
 .burger:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 21.75px;
-    height: 2.17px;
-    background-color: white;
-    border-radius: 1px;
-    transform: rotate(-45deg);
-    left: 22%;
-    top: 49%
+  transform: rotate(-45deg);
 }
 
 .burger::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 21.75px;
-    height: 2.17px;
-    background-color: white;
-    border-radius: 1px;
-    transform: rotate(45deg);
-    left: 22%;
-    top: 49%
+  transform: rotate(45deg);
 }
 
-
-@media (min-width: 768px) {
-
-
+.sidebar__header__button,
+.sidebar__main__button {
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  padding: 11px;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
 }
 
-@media (min-width: 1120px) {
+.sidebar__header__button:hover,
+.sidebar__main__button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
 
+.sidebar__main {
+  margin-top: 50.27px;
+}
+
+.sidebar__main__list,
+.sidebar__main__form {
+  list-style-type: none;
+}
+
+.sidebar__main__list {
+  font-size: 16px;
+}
+
+.sidebar__main__list li {
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.sidebar__main__link {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar__main__link:hover {
+  color: #41f6d7;
+  transition: 0.3s;
+}
+
+.sidebar__main__link:focus {
+  color: #7e7e82;
+}
+
+.sidebar__main__link:focus::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 40px;
+  background: #41f6d7;
+  border-radius: 0 20px 20px 0;
+  margin-top: -10px;
+  margin-left: -24px;
+}
+
+.sidebar__main__link:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar__main__block {
+  margin-top: 268px;
+}
+
+.sidebar__main__bottons-block {
+  display: flex;
+}
+
+.sidebar__main__button {
+  margin-right: 16px;
+}
+
+.sidebar__main__button:last-child,
+.sidebar__main__label:last-child {
+  margin-right: 0;
+}
+
+.phone {
+  background: #ff3e79 url("../img/phone.png") no-repeat 50% 50%;
+}
+
+.message {
+  background: #ff3e79 url("../img/message.png") no-repeat 50% 50%;
+}
+
+.user {
+  background: #ff3e79 url("../img/user.png") no-repeat 50% 50%;
+}
+
+.search {
+  background: #ff3e79 url("../img/search.png") no-repeat 50% 50%;
+}
+
+.mail {
+  margin-top: 16px;
+}
+
+.number {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.sidebar__main__form {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.sidebar__main__radio {
+  display: none;
+}
+
+.sidebar__main__label {
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+.sidebar__main__radio:checked + .sidebar__main__label {
+  color: #7e7e82;
 }
