@@ -201,6 +201,7 @@ main {
 }
 
 .sidebar__main__input:focus{
+  -webkit-outline: none;
   border: none;
   outline: none;
   background-color: transparent;
