@@ -105,9 +105,16 @@ main {
 }
 
 .sidebar__header__button:hover,
-.sidebar__main__button:hover {
+.sidebar__main__button:hover,
+.sidebar__header__button:focus,
+.sidebar__main__button:focus {
   opacity: 0.7;
   transition: 0.5s;
+}
+
+.sidebar__header__button:focus {
+  outline: none;
+  border: none;
 }
 
 .sidebar__main {
@@ -140,6 +147,8 @@ main {
 
 .sidebar__main__link:focus {
   color: #7e7e82;
+  border: none;
+  outline: none;
 }
 
 .sidebar__main__link:focus::before {
@@ -189,6 +198,12 @@ main {
 
 .search {
   background: #ff3e79 url("../img/search.png") no-repeat 50% 50%;
+}
+
+.sidebar__main__input:focus{
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .mail {
