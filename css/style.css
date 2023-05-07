@@ -112,7 +112,8 @@ main {
   transition: 0.5s;
 }
 
-.sidebar__header__button:focus {
+.sidebar__header__button:focus,
+.sidebar__main__button:focus {
   outline: none;
   border: none;
 }
@@ -200,10 +201,12 @@ main {
   background: #ff3e79 url("../img/search.png") no-repeat 50% 50%;
 }
 
-.sidebar__main__input:focus{
-  -webkit-outline: none;
+.sidebar__main__input:focus {
   border: none;
   outline: none;
+}
+
+.sidebar__main__input::selection {
   background-color: transparent;
 }
 
@@ -225,7 +228,14 @@ main {
 }
 
 .sidebar__main__radio {
-  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.sidebar__main__radio:focus {
+  border: none;
+  outline: none;
 }
 
 .sidebar__main__label {
