@@ -51,8 +51,9 @@ main {
   margin: auto;
 }
 
-.sidebar__header {
-  margin-top: 18.73px;
+.sidebar {
+  padding-top: 18px;
+  padding-bottom: 32px;
 }
 
 .sidebar__header__navigation,
@@ -218,13 +219,11 @@ main {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
-  margin-top: 12px;
 }
 
 .sidebar__main__form {
   display: flex;
   margin-top: 40px;
-  margin-bottom: 32px;
 }
 
 .sidebar__main__radio {
