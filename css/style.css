@@ -45,12 +45,22 @@ main {
   margin: auto;
 }
 
-.header {
-  padding: 16px;
-  border-top: solid #d9fff5;
+.brands-header {
+  padding-left: 16px;
+  padding-bottom: 16px;
+  background: linear-gradient(90deg, #F8F8F8 0%, #ffffff 98.61%);
 }
 
-.header__title {
+.brands-header::before {
+  content: "";
+  display: block;
+  background: #d9fff5;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 16px;
+}
+
+.brands-header__title {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -60,6 +70,11 @@ main {
   margin: 0;
 }
 
+div .swiper {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
 .swiper-slide__button {
   border: 1px solid #eaeaea;
   border-radius: 6px;
@@ -67,7 +82,6 @@ main {
   width: 240px;
   height: 72px;
   padding: 0;
-  margin-right: 16px;
 }
 
 .lenovo {
@@ -115,9 +129,10 @@ main {
 }
 
 .swiper .swiper-pagination-bullet {
-  background: #dddddd;
+  background-color: #dddddd;
   width: 12px;
   height: 12px;
+  margin-right: 9px !important;
 }
 
 .swiper .swiper-pagination-bullet-active {
@@ -156,8 +171,20 @@ div .swiper::before {
   cursor: pointer;
 }
 
-.swiper-slide:nth-child(n+10) {
+.swiper-slide:nth-child(n + 10) {
   display: none;
+}
+
+.swiper-slide__button:focus {
+  outline: none;
+}
+
+.brands__button:focus {
+  outline: none;
+}
+
+div .swiper-pagination-bullet:focus {
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -165,8 +192,9 @@ div .swiper::before {
     width: 768px;
   }
 
-  .header {
-    padding: 16px 24px;
+  .brands-header {
+    padding-left: 24px;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
   }
 
   .swiper-slide__button::before {
@@ -180,8 +208,8 @@ div .swiper::before {
     margin-bottom: 16px;
   }
 
-  .swiper-slide:nth-child(n+9) {
-    display: block;
+  .swiper-slide:nth-child(n + 7) {
+    display: none;
   }
 
   div .swiper::before {
@@ -209,6 +237,7 @@ div .swiper::before {
   }
 
   .brands__button {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -222,20 +251,23 @@ div .swiper::before {
     color: #1b1c21;
   }
 
-  .qwqw {
+  .brands__button__text {
     margin-left: 16px;
+  }
+
+  .swiper .swiper-pagination {
+    position: absolute;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1120px) {
-
   .container {
-      width: 1120px;
+    width: 1120px;
   }
 
-  
-  .header {
-    padding: 16px 32px;
+  .brands-header {
+    padding-left: 32px;
   }
 
   .swiper-slide__button {
@@ -249,15 +281,29 @@ div .swiper::before {
     margin-left: 32px;
   }
 
-
   div .swiper-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .swiper-slide:nth-child(7){
+  .swiper-slide:nth-child(7) {
     grid-column-start: 4;
     grid-row-start: 1;
   }
 
+  .swiper-slide:nth-child(n + 7) {
+    display: block;
+  }
+
+  .swiper-slide:nth-child(n + 9) {
+    display: none;
+  }
+
+  .brands__button {
+    margin-left: 31px;
+  }
+
+  .brands-header {
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+  }
 }
