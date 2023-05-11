@@ -48,7 +48,7 @@ main {
 .brands-header {
   padding-left: 16px;
   padding-bottom: 16px;
-  background: linear-gradient(90deg, #F8F8F8 0%, #ffffff 98.61%);
+  background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
 }
 
 .brands-header::before {
@@ -176,10 +176,11 @@ div .swiper::before {
 }
 
 .swiper-slide__button:focus {
-
+  outline: none;
 }
 
 .brands__button:focus {
+  outline: none;
 }
 
 div .swiper-pagination-bullet:focus {
