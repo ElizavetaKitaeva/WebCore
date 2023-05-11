@@ -288,6 +288,7 @@ div .swiper-pagination-bullet:focus {
   .swiper-slide:nth-child(7) {
     grid-column-start: 4;
     grid-row-start: 1;
+    order: 1;
   }
 
   .swiper-slide:nth-child(n + 7) {
