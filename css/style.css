@@ -176,11 +176,11 @@ div .swiper::before {
 }
 
 .swiper-slide__button:focus {
-
+  outline: none;
 }
 
 .brands__button:focus {
-
+  outline: none;
 }
 
 div .swiper-pagination-bullet:focus {
