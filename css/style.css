@@ -176,11 +176,10 @@ div .swiper::before {
 }
 
 .swiper-slide__button:focus {
-  outline: none;
+
 }
 
 .brands__button:focus {
-  outline: none;
 }
 
 div .swiper-pagination-bullet:focus {
@@ -219,7 +218,7 @@ div .swiper-pagination-bullet:focus {
   div .swiper {
     margin-top: 24px;
     margin-left: 24px;
-    height: 150px;
+    height: 160px;
     overflow: hidden;
   }
 
