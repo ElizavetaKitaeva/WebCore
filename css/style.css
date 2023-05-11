@@ -176,11 +176,11 @@ div .swiper::before {
 }
 
 .swiper-slide__button:focus {
-  outline: none;
+
 }
 
 .brands__button:focus {
-  outline: none;
+
 }
 
 div .swiper-pagination-bullet:focus {
@@ -256,8 +256,7 @@ div .swiper-pagination-bullet:focus {
   }
 
   .swiper .swiper-pagination {
-    position: absolute;
-    margin-top: 0;
+    display: none;
   }
 }
 

@@ -1,5 +1,6 @@
 let init = false;
 let checkClick = false;
+let moreButton = document.querySelector('.brands__button');
 function swiperCard() {
   if (window.innerWidth < 768 && !init) {
       init = true;
@@ -7,12 +8,16 @@ function swiperCard() {
         direction: "horizontal",
         slidesPerView: "auto",
         spaceBetween: 16,
+
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
       });
-
+      
+      checkClick = true;
+      buttonMore(moreButton);
+      
   } else if (init && window.innerWidth >= 768) {
     swiper.destroy();
     init = false;
@@ -23,12 +28,10 @@ swiperCard();
 window.addEventListener("resize", swiperCard);
 
 function buttonMore(moreButton) {
-  let textButtonMore = moreButton.querySelector('p');
+  let textButtonMore = moreButton.querySelector('.brands__button__text');
   let imageButtonMore = moreButton.querySelector('.brands__button__image');
-  let swiperHeight = document.querySelector('div .swiper');
+  let swiperHeight = document.querySelector('.swiper');
   let cardView = document.querySelectorAll('.swiper-slide');
-
-  moreButton.addEventListener('click', function() {
 
     switch (checkClick) {
 
@@ -39,6 +42,7 @@ function buttonMore(moreButton) {
         imageButtonMore.style.transform='rotate(180deg)';
         cardView.forEach(element => {
           element.style.display = 'block';
+          console.log(element);
         });
         break;
 
@@ -49,27 +53,17 @@ function buttonMore(moreButton) {
         imageButtonMore.style.transform=null;
         cardView.forEach(element => {
           element.style.display = null;
+          console.log(element);
         });
         break;
 
       default:
         checkClick = true;
-
         break;
     }
-
-  });
 }
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth < 768) {
-    let textButtonMore = document.querySelector('.brands__button__text');
-    let imageButtonMore = document.querySelector('.brands__button__image');
-    textButtonMore.textContent = 'Показать все';
-    imageButtonMore.style.transform=null;
-  }
-  checkClick = false;
+moreButton.addEventListener('click', function() {
+  buttonMore(moreButton);
 });
-
-buttonMore(document.querySelector('.brands__button'));
 
